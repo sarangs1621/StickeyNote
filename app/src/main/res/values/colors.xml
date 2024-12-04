@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#6200EE</color> <!-- Updated color for buttons to match the screenshot -->
+    <color name="purple_500">#013B8A</color>
+    <color name="purple_700">#013B8A</color>
+    <color name="teal_200">#013B8A</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="back_color">#13253D</color>
+    <color name="fab_color">#6200EE</color> <!-- Color for Floating Action Button -->
+    <color name="button_color">#2D0A61</color> <!-- Added new color for other buttons (bold, italic, underline, increase, decrease) -->
+    <color name="yellow">#FFEB3B</color>
+</resources>

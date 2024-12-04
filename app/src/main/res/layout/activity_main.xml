@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color">
+
+    <!-- Title for Sticky Note -->
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Sticky Note"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/idScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/LL1"
+        android:layout_below="@id/idTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="vertical">
+
+        <EditText
+            android:id="@+id/idEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/back_color"
+            android:gravity="start|top"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="Enter your Note Details"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:scrollbars="vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </ScrollView>
+
+    <!-- FloatingActionButton to save the note -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFABSave"
+        android:layout_width="63dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="72dp"
+        android:layout_above="@id/idLL2"
+        android:backgroundTint="@color/fab_color"
+        android:onClick="saveButton"
+        android:src="@drawable/ic_save"
+        app:tint="@color/white" />
+
+    <!-- Layout for Increase/Decrease text size -->
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idLL2"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_margin="5dp"
+        android:background="@color/purple_200">
+
+        <Button
+            android:id="@+id/idBtnReduceSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_color"
+            android:onClick="reduceTextSize"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTVSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="14"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/idBtnincreaseSize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_color"
+            android:onClick="increaseTextSize"
+            android:text="+"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Layout for Bold, Underline, Italic buttons -->
+    <LinearLayout
+        android:id="@+id/idLL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_margin="5dp"
+        android:background="@color/purple_200">
+
+        <Button
+            android:id="@+id/idBtnBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/button_color"
+            android:textStyle="bold"
+            android:onClick="toggleBold" />
+
+        <Button
+            android:id="@+id/idBtnUnderLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="U"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/button_color"
+            android:textStyle="bold"
+            android:onClick="toggleUnderline" />
+
+        <Button
+            android:id="@+id/idBtnIntalic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="I"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/button_color"
+            android:textStyle="bold"
+            android:onClick="toggleItalic" />
+    </LinearLayout>
+</RelativeLayout>
