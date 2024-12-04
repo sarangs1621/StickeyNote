@@ -9,9 +9,7 @@ Welcome to the **Sticky Note Application**! This project is designed to help use
 
 ## __*Tech Stack 🛠️*__
 - __*Frontend*__: Android Studio using Java/Kotlin for building a smooth and responsive user interface.
-- __*Backend*__: Firebase for real-time data storage.
-- __*Database*__: Firebase Firestore for managing and syncing note data.
-
+  
 ## __*Installation & Setup 🚀*__
 
 Follow these steps to get the Sticky Note Application running on your local machine:
