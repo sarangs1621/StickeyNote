@@ -27,12 +27,10 @@ Follow these steps to get the Sticky Note Application running on your local mach
    - Click on **Run** to build and deploy the app.
 
 ## __*Configuration Details ⚙️*__
-- __*Firebase Setup*__: Ensure your Firebase project is properly configured for Firestore.
 - __*Dependencies*__: The necessary dependencies are listed in the `build.gradle` file and will be synced automatically.
 
 ## __*Project Structure 🗂️*__
 - __*UI Components*__: Activities and fragments to handle different user interactions.
-- __*Firebase Integration*__: Handling note saving and syncing.
 - __*Utils*__: Helper classes for date formatting, note sorting, etc.
 
 ## __*Usage 🧭*__
