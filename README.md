@@ -22,11 +22,7 @@ Follow these steps to get the Sticky Note Application running on your local mach
    - Launch Android Studio and open the cloned project.
    - Sync the Gradle files to download necessary dependencies.
 
-3. **Configure Firebase**:
-   - Create a Firebase project and add your Android app.
-   - Download the `google-services.json` file and add it to the `app` directory.
-
-4. **Run the Application**:
+3. **Run the Application**:
    - Connect an Android device or use an emulator.
    - Click on **Run** to build and deploy the app.
 
