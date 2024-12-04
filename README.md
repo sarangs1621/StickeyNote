@@ -51,6 +51,7 @@ Here's a sneak peek at our UI:
 - __*Note Editor*__: Create or edit notes with a simple and effective editor.
 ![image](https://github.com/user-attachments/assets/65d1301d-a11b-404c-bef3-3572b90ba3f2)
 ![image](https://github.com/user-attachments/assets/003873b8-905e-4418-8c0c-e6a30cde721c)
+![image](https://github.com/user-attachments/assets/ef4df29e-e3ec-4fb8-9dcb-ea20b151cd7d)
 
 
 ## __*Contribution Guidelines 🤝*__
